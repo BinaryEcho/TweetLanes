@@ -232,10 +232,18 @@ public class AppSettings {
 	 * 
 	 */
     public int getCurrentThemeStyle() {
-    	return R.style.Theme_TweetLanes_LightDarkActionBar;
+    	//return R.style.Theme_TweetLanes_LightDarkActionBar;
     	
       // return mCurrentTheme == Theme.Holo_Dark ? R.style.Theme_TweetLanes
        //        : R.style.Theme_TweetLanes_Light;
+    	
+    	if(mCurrentTheme == Theme.Holo_Dark) {
+    		return R.style.Theme_TweetLanes;
+    	} else if(mCurrentTheme == Theme.Holo_Light) {
+    		return R.style.Theme_TweetLanes_Light;
+    	} else if(mCurrentTheme == Theme.Holo_LightDarkActionBar) {
+    		return R.style.Theme_TweetLanes_LightDarkActionBar;
+    	}
     }
 
     /*
