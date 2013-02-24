@@ -55,7 +55,7 @@ public class AppSettings {
 	 * 
 	 */
     public enum Theme {
-        Holo_Dark, Holo_Light
+        Holo_Dark, Holo_Light, Holo_LightDarkActionBar
     };
 
     /*
@@ -232,8 +232,10 @@ public class AppSettings {
 	 * 
 	 */
     public int getCurrentThemeStyle() {
-        return mCurrentTheme == Theme.Holo_Dark ? R.style.Theme_TweetLanes
-                : R.style.Theme_TweetLanes_Light;
+    	return R.style.Theme_TweetLanes_LightDarkActionBar;
+    	
+      // return mCurrentTheme == Theme.Holo_Dark ? R.style.Theme_TweetLanes
+       //        : R.style.Theme_TweetLanes_Light;
     }
 
     /*

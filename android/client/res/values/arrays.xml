@@ -37,7 +37,7 @@
     <string-array name="themevalues_list_preference">
         <item>light</item>
         <item>dark</item> 
-        <item>lightdarkactionbars</item> 
+        <item>lightdarkactionbar</item> 
     </string-array>
     
     <string-array name="quote_list_preference">
